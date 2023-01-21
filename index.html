@@ -9,33 +9,34 @@
 </head>
 <body>
   <h1 class="text">Calc Dev</h1>
-  <p class="inputText" id="textInput"></p>
-  
+  <div id="previous-operation"></div>
+    
   <div class="main-container">
   
     <div class="container">
-    <button class="btn" id="1">1</button>
-    <button class="btn" id="2" value=2 >2</button>
-    <button class="btn" id="3">3</button>
+    <button class="btn" id="1" onclick="insert('1')">1</button>
+    <button class="btn" id="2" onclick="insert('2')">2</button>
+    <button class="btn" id="3" onclick="insert('3')">3</button>
     <button class="btn" id="soma">+</button>
   </div>
     
   <div class="container-4">
-    <button class="btn" id="4">4</button>
-    <button class="btn" id="5">5</button>
-    <button class="btn" id="6">6</button>
-    <butto class="btn" id="subtrair">-  </button>
+    <button class="btn" id="4" onclick="insert('4')">4</button>
+    <button class="btn" id="5" onclick="insert('5')">5</button>
+    <button class="btn" id="6" onclick="insert('6')">6</button>
+    <button class="btn" id="subtrair">-  </button>
     </div>
 
     <div class="container-5">
-      <button class="btn" id="8">8</button>
-      <button class="btn" id="9">9</button>
-      <button class="btn" id="0">0</button>
+      <button class="btn" id="6" onclick="insert('7')">7</button>
+      <button class="btn" id="8" onclick="insert('8')">8</button>
+      <button class="btn" id="9" onclick="insert('9')">9</button>
       <button class="btn" id="divisao">/</button>
     </div>
     
     <div class="container-6">
-      <button type="submit" class="calculator" id="btn-calcular">Calcular</button>
+      <button type="submit" class="calculator" id="btn-calcular" >Calcular</button>
+      <button class="btn" id="btn0" onclick="insert('0')">0</button>
       <button class="btn" id="multiplicacao">*</button>
     </div>
     </div>
